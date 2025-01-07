@@ -1,17 +1,15 @@
-﻿using terrain;
-namespace aff
-{
-   public class Program
-{
-    public static void Main()
-    {
-        string connectionString = "Host=localhost;Username=postgres;Password=bloodseeker;Database=gestion";
-        MyConnection myConnection = new MyConnection(connectionString);
-        myConnection.OpenConnection();
-        string query = "SELECT * FROM users;";
-        myConnection.ExecuteQueryWithResult(query);
-        myConnection.CloseConnection();
-    }
-}
-}
+﻿using aff;
 
+namespace tennis;
+
+static class Program
+{
+    /// <summary>
+    ///  The main entry point for the application.
+    /// </summary>
+    [STAThread]
+    static void Main()
+    {
+       Application.Run (new Fenetre());
+    }    
+}
