@@ -9,7 +9,7 @@ namespace aff
         {
             // Set the panel size and other properties
             this.Size = new Size(300, 300);
-            this.BackColor = Color.White;
+            this.BackColor = Color.Azure;
         }
 
         // Override the OnPaint method to perform custom drawing
